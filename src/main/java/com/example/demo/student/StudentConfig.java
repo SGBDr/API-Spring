@@ -12,8 +12,6 @@ public class StudentConfig {
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository studentRepository){
         return a -> {
-            Student y = new Student("Rode", LocalDate.now(), "email");
-            studentRepository.save(y);
         };
     }
 }
